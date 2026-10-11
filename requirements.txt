@@ -1,0 +1,15 @@
+# Core
+langgraph>=0.2
+pydantic>=2.0
+pyyaml
+pillow
+rapidfuzz
+# Local open-weight inference (Qwen VLM)
+torch
+transformers>=4.57
+accelerate
+# Optional: 4-bit loading, LoRA fine-tuning, OCR cross-check, local server client
+bitsandbytes
+peft
+easyocr
+openai        # ONLY used to talk to a LOCAL vLLM/Ollama server (hosts are validated)
