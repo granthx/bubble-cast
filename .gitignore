@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Large model binaries and archive packages (>100MB blocked by GitHub)
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Raw image datasets (keep sequences.json, labels.jsonl, score.py, sample_submission.jsonl)
+dataset/development/images/
+dataset/test/images/
+
+# Jupyter / Colab checkpoints
+.ipynb_checkpoints/
+
+# Frontend dependencies & builds
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Helper setup scripts
+build_git_history.py
+create_60_commits.py
+
+
