@@ -1,0 +1,16 @@
+model:
+  backend: transformers            # transformers | openai_local (local vLLM/Ollama only)
+  model_id: Qwen/Qwen2.5-VL-7B-Instruct
+  adapter: null                    # path to LoRA adapter produced by scripts/train_lora.py
+  load_4bit: false                 # true if VRAM < 16GB
+  min_pixels: 200704               # 256*28*28
+  max_pixels: 1254400              # 1600*28*28 ; raise for tiny text, lower for VRAM
+  base_url: http://localhost:8000/v1   # only for backend=openai_local
+  api_model: Qwen/Qwen2.5-VL-7B-Instruct
+pipeline:
+  context_pages: 1                 # previous pages shown (image + transcript) for label consistency
+  retries: 2
+  max_new_tokens: 1536
+  reconcile: false                 # final "merge duplicate characters" agent (ablate on dev!)
+  verify_ocr: false                # EasyOCR cross-check to drop hallucinated lines
+  verify_threshold: 55             # 0-100 fuzzy score; tune on dev
