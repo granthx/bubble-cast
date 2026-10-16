@@ -9,7 +9,6 @@ venv/
 env/
 
 # Large model binaries and archive packages (>100MB blocked by GitHub)
-*.zip
 *.tar
 *.tar.gz
 *.7z
@@ -21,6 +20,7 @@ env/
 # Raw image datasets (keep sequences.json, labels.jsonl, score.py, sample_submission.jsonl)
 dataset/development/images/
 dataset/test/images/
+BYTE*.zip
 
 # Jupyter / Colab checkpoints
 .ipynb_checkpoints/
