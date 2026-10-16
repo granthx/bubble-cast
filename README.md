@@ -1,4 +1,4 @@
-# 🎙️ Bubblecast — Multimodal Manga Reader & Dialogue Intelligence
+#  Bubblecast — Multimodal Manga Reader & Dialogue Intelligence
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -11,7 +11,7 @@
 
 ---
 
-## 🏗️ Architecture & Multi-Agent Pipeline
+##  Architecture & Multi-Agent Pipeline
 
 To prevent identity scrambling across panel borders, Bubblecast utilizes a stateful **multi-agent pipeline** with continuous carry-forward visual memory.
 
@@ -39,7 +39,7 @@ To prevent identity scrambling across panel borders, Bubblecast utilizes a state
 
 ---
 
-## ⚡ Adaptation & Parameter-Efficient Fine-Tuning
+##  Adaptation & Parameter-Efficient Fine-Tuning
 
 In strict compliance with open-weight and open-source standards, Bubblecast relies exclusively on local, open-access tools:
 
@@ -49,7 +49,7 @@ In strict compliance with open-weight and open-source standards, Bubblecast reli
 - **LoRA Configuration**: Rank $r = 32$, Alpha $\alpha = 64$, dropout $0.05$.
 - **Loss Masking**: Gradients computed exclusively on structured answer JSON tokens.
 
-### 🎯 Trained Model Checkpoints & Verification
+###  Trained Model Checkpoints & Verification
 
 The trained PEFT LoRA adapter configurations, tokenizers, and processor artifacts are committed directly in the repository under [`adapters/`](file:///c:/Users/Granth/All%20project/manga_speaker/adapters):
 
@@ -79,7 +79,7 @@ model = PeftModel.from_pretrained(base_model, "adapters/qwen_manga_lora_v2")
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 bubble-cast/
@@ -129,7 +129,7 @@ bubble-cast/
 
 ---
 
-## 💻 Web Studio Quickstart
+##  Web Studio Quickstart
 
 Bubblecast features a dedicated production web studio powered by a **FastAPI** backend and a **React 19 + TypeScript** frontend.
 
@@ -157,7 +157,7 @@ Open **`http://localhost:5173`** in your browser.
 
 ---
 
-## 📚 Citations & External References
+##  Citations & External References
 
 - **Base Vision-Language Models**:
   - *Qwen2.5-VL / Qwen2-VL*: Alibaba Cloud, Qwen Team (2024). Open-weight multimodal model. [Qwen2.5-VL GitHub](https://github.com/QwenLM/Qwen2.5-VL).
